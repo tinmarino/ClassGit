@@ -200,7 +200,7 @@ background-color: #859900;
 </header>
 <h1 id="introduction">Introduction</h1>
 <p><strong>Bonjour</strong> : bonjour les enfants, aujourd’hui nous allons apprendre <code>git</code>.</p>
-<p><strong>Help</strong> : Comme dans tout interface en ligne de commande, la commande la plus importante est <code>help</code>. Quand je vous donne une sous-commande <code>git</code>, par <code>init</code> qui s’utilise comme <code>git init .</code>, dans le doute, taper <code>git help init</code>. Un <code>PAGER</code> vous affichera l’aide. Pour en sortir, taper sur <code>q</code> (comme ‘quit’).</p>
+<p><strong>Help</strong> : Comme dans tout interface en ligne de commande, la commande la plus importante est <code>help</code>. Quand je vous donne une sous-commande <code>git</code>, par exemple <code>init</code> qui s’utilise comme <code>git init .</code>, dans le doute, taper <code>git help init</code>. Un <code>PAGER</code> vous affichera l’aide. Pour en sortir, taper sur <code>q</code> (comme ‘quit’).</p>
 <h1 id="leçon-1-créer-un-dépôt-git">Leçon 1 : Créer un dépôt Git</h1>
 <p>Il est fréquent de s’intégrer dans un projet déjà existant mais il est bon de savoir comment en commencer un. C’est pratique pour faire des tests.</p>
 <p>Dans cette leçon nous verrons :</p>
@@ -312,7 +312,7 @@ background-color: #859900;
 </ol>
 <p>Tu peux prendre une série de commit. <code>gitk</code> te permet de le visualiser et la sous command <code>checkout</code> te permet de remplacer ton ‘Working Directory’ à l’état dans lequel il était lors d’un précédent commit.</p>
 <h1 id="leçon-3-synchroniser-avec-les-copains">Leçon 3 : Synchroniser avec les copains</h1>
-<p>L’exemple précédent n’était pas anondin : le nom de fichier : <code>Readme.md</code> et son format : <code>markdown</code> sont connues de github. Se sera aficher joliement sur ta page github. Il reste juste à le pousser sur le dépot distant avec <code>git push</code>. Ca ne marche pas : il devrai te conseiller : <code>git push --set-upstream origin master</code>. Fais le ! Sinon, c’est que tu n’a pas bien fait l’initialisation du dépot et tu dois ajouter l’URL du dépot distant (remote repository) via (je répète) :</p>
+<p>L’exemple précédent n’était pas anondin : le nom de fichier : <code>Readme.md</code> et son format : <code>markdown</code> sont connues de github. Se sera aficher joliement sur ta page github. Il reste juste à le pousser sur le dépot distant avec <code>git push</code>. Ca ne marche pas : il devrai te conseiller : <code>git push --set-upstream origin master</code>. Fais le ! Si il te dit : <code>git remote add &lt;name&gt; &lt;url&gt;</code>, c’est que tu n’a pas bien fait l’initialisation du dépot et tu dois ajouter l’URL du dépot distant (remote repository) via (je répète en replaçant <code>&lt;name&gt;</code> par <code>origin</code> et <code>&lt;url&gt;</code> par … ben l’url)</p>
 <pre><code>git remote add origin https://github.com/tinmarino/ClassGit.git</code></pre>
 <p>Ca marche ? Regarde github</p>
 <p>Le contraire de <code>push</code> (toi -&gt; github) est <code>pull</code> (github -&gt; toi)</p>

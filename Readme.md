@@ -144,7 +144,7 @@ Tu peux prendre une série de commit. `gitk` te permet de le visualiser et la so
 
 # Leçon 3 : Synchroniser avec les copains
 
-L'exemple précédent n'était pas anondin : le nom de fichier :  `Readme.md` et son format : `markdown` sont connues de github. Se sera aficher joliement sur ta page github. Il reste juste à le pousser sur le dépot distant avec `git push`. Ca ne marche pas : il devrai te conseiller : `git push --set-upstream origin master`. Fais le ! Sinon, c'est que tu n'a pas bien fait l'initialisation du dépot et tu dois ajouter l'URL du dépot distant (remote repository) via (je répète) :
+L'exemple précédent n'était pas anondin : le nom de fichier :  `Readme.md` et son format : `markdown` sont connues de github. Se sera aficher joliement sur ta page github. Il reste juste à le pousser sur le dépot distant avec `git push`. Ca ne marche pas : il devrai te conseiller : `git push --set-upstream origin master`. Fais le ! Si il te dit : ` git remote add <name> <url>`, c'est que tu n'a pas bien fait l'initialisation du dépot et tu dois ajouter l'URL du dépot distant (remote repository) via (je répète en replaçant `<name>` par `origin` et `<url>` par ... ben l'url)
 
 ```
 git remote add origin https://github.com/tinmarino/ClassGit.git
